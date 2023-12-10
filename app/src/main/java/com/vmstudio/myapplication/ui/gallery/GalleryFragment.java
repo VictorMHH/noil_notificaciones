@@ -65,6 +65,7 @@ public class GalleryFragment extends Fragment implements SearchView.OnQueryTextL
         shimmerFrameLayout=root.findViewById(R.id.shimmerview);
 
         cargarRecyclerRequisiones();
+        Toast.makeText(getContext(),"Prueba de github",Toast.LENGTH_SHORT).show();
 
         return root;
     }
