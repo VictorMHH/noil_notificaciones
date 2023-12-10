@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- radius para cardview-->
+    <dimen name="dimRadius">15dp</dimen>
+
+    <!-- radius para botones-->
+    <dimen name="dimRadiusbtn">20dp</dimen>
+
+
+    <!-- tamaños  de minimos-->
+    <dimen name="dimen01">1dp</dimen>
+    <dimen name="dimen02">2dp</dimen>
+    <dimen name="dimen03">3dp</dimen>
+    <dimen name="dimen04">4dp</dimen>
+    <dimen name="dimen05">5dp</dimen>
+    <dimen name="dimen06">6dp</dimen>
+    <dimen name="dimen07">7dp</dimen>
+    <dimen name="dimen08">8dp</dimen>
+    <dimen name="dimen09">9dp</dimen>
+    <dimen name="dimen010">10dp</dimen>
+
+
+    <!-- tamaños  de componentes-->
+    <dimen name="dimen1">10dp</dimen>
+    <dimen name="dimen2">15dp</dimen>
+    <dimen name="dimen3">20dp</dimen>
+    <dimen name="dimen4">25dp</dimen>
+    <dimen name="dimen5">30dp</dimen>
+    <dimen name="dimen6">35dp</dimen>
+    <dimen name="dimen7">40dp</dimen>
+    <dimen name="dimen8">45dp</dimen>
+    <dimen name="dimen9">50dp</dimen>
+    <dimen name="dimen10">55dp</dimen>
+
+    <dimen name="dimen100">100dp</dimen>
+    <dimen name="dimen200">200dp</dimen>
+    <dimen name="dimen300">300dp</dimen>
+
+
+    <!-- tamaños  de letras-->
+    <dimen name="l10">10sp</dimen>
+    <dimen name="l11">11sp</dimen>
+    <dimen name="l12">12sp</dimen>
+    <dimen name="l13">13sp</dimen>
+    <dimen name="l14">14sp</dimen>
+    <dimen name="l15">15sp</dimen>
+    <dimen name="l16">16sp</dimen>
+    <dimen name="l17">17sp</dimen>
+    <dimen name="l18">18sp</dimen>
+    <dimen name="l19">19sp</dimen>
+    <dimen name="l20">20sp</dimen>
+
+    <!-- tamaños  de imagenes-->
+    <dimen name="dimenImg1">350px</dimen>
+
+    <!-- tamaños  de botones-->
+    <dimen name="dimenbtn1">60dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- tamaño de icono de opciones del item recyclerview requisiciones-->
+    <dimen name="dimenIconReq">50dp</dimen>
+
+
+</resources>

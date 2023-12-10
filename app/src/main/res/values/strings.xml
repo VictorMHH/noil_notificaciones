@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- titulos de Activitys-->
+    <string name="app_name">Noil</string>
+    <string name="TitleConexion">Datos de Conexión</string>
+    <string name="pass">dsai21</string>
+
+
+    <string name="Contrasenaincorrecta">Contraseña Incorrecta</string>
+    <string name="campovacio">Campos Vacio.</string>
+    <string name="txtConectado">Conectado a la URL: </string>
+
+    <string name="tvIngreseDatos">Ingrese los siguientes datos</string>
+    <string name="nombreConexion">Nombre de la conexión</string>
+    <string name="url">URL</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="confirmacion">Confirmación</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cargando">Cargando</string>
+    <string name="definirPricipal">Definir como conexion principal.</string>
+
+    <!-- textos de botones-->
+    <string name="recordarpass">Recordar Contraseña</string>
+    <string name="guardar">Guardar</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="opciciones">Opciones</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="agregar">Agregar</string>
+
+    <string name="title_activity_menu_principal">menu_principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuraciones</string>
+
+
+    <!--etiquetas de menu lateral-->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_Requisiciones">Requisiciones</string>
+    <string name="menu_ordencom">Ordenes de compra</string>
+    <string name="menu_cerrar">Cerrar sesión</string>
+
+    <!--etiquetas del fragment requisiciones-->
+    <string name="fab_buscar_req">Buscar</string>
+    <string name="fab_filtrar_req">Filtrar</string>
+
+</resources>

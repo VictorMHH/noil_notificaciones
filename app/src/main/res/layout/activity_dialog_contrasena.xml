@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimRadius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen7"
+        android:background="@color/AzulTextoInfo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese la contraseña"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="@dimen/l18"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etContrasenadialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_margin="@dimen/dimen3"
+        android:hint="@string/contrasena" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen8"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCancelarDialogContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/blanco"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cancelar"
+                android:textColor="@color/rojoCancelar"
+                android:textSize="@dimen/l16"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnIngresarDialogContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/blanco"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ingresar"
+                android:textColor="@color/azulAceptar"
+                android:textSize="@dimen/l16"
+                android:textAlignment="center"
+                android:gravity="center" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

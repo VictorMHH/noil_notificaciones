@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grislijero"
+    android:orientation="vertical"
+    tools:context=".vista.datos_conexion">
+
+    <TextView
+        android:id="@+id/tvInformativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Lista de conexiones disponibles."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvDatosConectador"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="675dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/TitleConexion" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDatosConectador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dimen05"
+        android:elevation="@dimen/dimen02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/dimen1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen02"
+                android:textSize="@dimen/l16"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/dimen05"
+                android:text="@string/txtConectado" />
+
+            <TextView
+                android:id="@+id/tvDCNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen02"
+                android:layout_marginLeft="@dimen/dimen05"
+                android:layout_marginRight="@dimen/dimen05"
+
+                android:text="Nombre" />
+
+            <TextView
+                android:id="@+id/tvUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen02"
+                android:layout_marginLeft="@dimen/dimen05"
+                android:layout_marginRight="@dimen/dimen05"
+                android:layout_marginTop="@dimen/dimen05"
+                android:layout_marginBottom="@dimen/dimen1"
+                android:text="URL..." />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvListaConexiones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimen1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/dimen1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInformativo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarconexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onclicagregarConexion"
+        android:src="@drawable/ic_agregar_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

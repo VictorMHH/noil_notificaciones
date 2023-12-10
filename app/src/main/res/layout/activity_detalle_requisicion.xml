@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grislijero"
+    tools:context=".detalles_requisiciones">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbDetalleReq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen1"
+        android:clickable="true"
+        android:elevation="@dimen/dimen05"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#354FE3"
+        app:cardCornerRadius="@dimen/dimRadius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbDetalleReq">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dimen1">
+
+            <TextView
+                android:id="@+id/tvFolioReqDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen08"
+                android:padding="@dimen/dimen02"
+                android:text="Verytab-0001-2023"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/l16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFechaReqDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="@dimen/dimen02"
+                android:text="01/11/2023"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/l10" />
+
+            <TextView
+                android:id="@+id/tvDepartamentoReqDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dimen05"
+                android:padding="@dimen/dimen02"
+                android:text="Almacen"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/l15" />
+
+            <TextView
+                android:id="@+id/tvTipoCompraReqDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:padding="@dimen/dimen02"
+                android:text="Stock Refrescos"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/l15" />
+
+            <TextView
+                android:id="@+id/tvTotalReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$3005"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/l17"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDetalleReq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

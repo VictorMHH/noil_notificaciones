@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen1"
+    android:layout_marginEnd="@dimen/dimen1"
+    android:layout_marginTop="@dimen/dimen1"
+    android:background="@color/blanco"
+    app:cardCornerRadius="@dimen/dimRadius"
+    android:elevation="@dimen/dimen05"
+    android:clickable="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvFolioReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen08"
+            android:layout_marginTop="@dimen/dimen08"
+            android:padding="@dimen/dimen02"
+            android:text="Verytab-0001-2023"
+            android:textSize="@dimen/l16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFechaReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/dimen02"
+            android:text="01/11/2023"
+            android:textSize="@dimen/l10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFolioReq" />
+
+        <TextView
+            android:id="@+id/tvDepartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/dimen05"
+            android:text="Almacen"
+            android:padding="@dimen/dimen02"
+            android:textSize="@dimen/l15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFechaReq" />
+
+        <TextView
+            android:id="@+id/tvTipoCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Stock Refrescos"
+            android:padding="@dimen/dimen02"
+            android:textSize="@dimen/l15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDepartamento" />
+
+        <ImageView
+            android:id="@+id/imgOpcionesItemReq"
+            android:layout_width="@dimen/dimenIconReq"
+            android:layout_height="@dimen/dimenIconReq"
+            android:src="@drawable/baseline_chevron_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

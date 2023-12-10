@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/baseline_dashboard_24"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_requisicion"
+            android:icon="@drawable/baseline_requisicion_24"
+            android:title="@string/menu_Requisiciones" />
+        <item
+            android:id="@+id/nav_oc"
+            android:icon="@drawable/baseline_oc_24"
+            android:title="@string/menu_ordencom" />
+    </group>
+</menu>

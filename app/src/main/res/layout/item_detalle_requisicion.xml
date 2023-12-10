@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dimen1"
+    android:layout_marginStart="@dimen/dimen1"
+    android:layout_marginEnd="@dimen/dimen1"
+    app:cardCornerRadius="@dimen/dimRadius"
+    android:elevation="@dimen/dimen05">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvIdInsumoReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VRT-001"
+            android:layout_marginStart="@dimen/dimen1"
+            android:layout_marginTop="@dimen/dimen1"/>
+
+        <TextView
+            android:id="@+id/tvDescripcionInsumoReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galletas marias gamesas"
+            android:maxLines="1"
+            android:layout_marginStart="@dimen/dimen1"/>
+
+        <TextView
+            android:id="@+id/tvMedidaReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caja"
+            android:layout_marginStart="@dimen/dimen1"/>
+
+        <TextView
+            android:id="@+id/tvCantidadReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:layout_marginStart="@dimen/dimen1"
+            />
+
+        <TextView
+            android:id="@+id/tvCostoReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$22"
+            android:layout_marginStart="@dimen/dimen1"/>
+
+        <TextView
+            android:id="@+id/tvTotalxInsumoReqDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$405"
+            android:textAlignment="textEnd"
+            android:layout_marginStart="@dimen/dimen1"
+            android:layout_marginEnd="@dimen/dimen1"
+            android:layout_marginBottom="@dimen/dimen05"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
