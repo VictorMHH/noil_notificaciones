@@ -22,4 +22,14 @@
         android:name="com.vmstudio.myapplication.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_ordencom"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/entrada_almacen"
+        android:name="com.vmstudio.myapplication.ui.entrada_almacen"
+        android:label="fragment_entrada_almacen"
+        tools:layout="@layout/fragment_entrada_almacen" />
+    <fragment
+        android:id="@+id/salida_almacen"
+        android:name="com.vmstudio.myapplication.ui.salida_almacen"
+        android:label="fragment_salida_almacen"
+        tools:layout="@layout/fragment_salida_almacen" />
 </navigation>

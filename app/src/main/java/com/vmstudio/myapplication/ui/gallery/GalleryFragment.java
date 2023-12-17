@@ -29,7 +29,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.vmstudio.myapplication.R;
 import com.vmstudio.myapplication.controlador.requisicionesAdapter;
 import com.vmstudio.myapplication.databinding.FragmentGalleryBinding;
-import com.vmstudio.myapplication.detalles_requisiciones;
+import com.vmstudio.myapplication.vista.detalles_requisiciones;
 import com.vmstudio.myapplication.modelo.requisiciones;
 
 import org.json.JSONArray;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/grislijero"
-    tools:context=".detalles_requisiciones">
+    tools:context=".vista.detalles_requisiciones">
 
 
     <androidx.appcompat.widget.Toolbar

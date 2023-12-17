@@ -1,4 +1,4 @@
-package com.vmstudio.myapplication;
+package com.vmstudio.myapplication.vista;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.vmstudio.myapplication.R;
 import com.vmstudio.myapplication.databinding.ActivityMenuPrincipalBinding;
 
 public class menu_principal extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class menu_principal extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_inicio, R.id.nav_requisicion, R.id.nav_oc)
+                R.id.nav_inicio, R.id.nav_requisicion, R.id.nav_oc,R.id.entrada_almacen,R.id.salida_almacen)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_principal);

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719432011978",
+    "project_id": "notificaciones-a08d7",
+    "storage_bucket": "notificaciones-a08d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719432011978:android:a27ed44931a2840e26a433",
+        "android_client_info": {
+          "package_name": "com.vmstudio.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm-m4Ass4BtSYEI1CXk4dVLpziqphutXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

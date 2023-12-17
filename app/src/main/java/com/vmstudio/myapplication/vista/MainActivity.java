@@ -6,24 +6,19 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.vmstudio.myapplication.R;
 import com.vmstudio.myapplication.controlador.sharedP.conexionSharedPreferences;
 import com.vmstudio.myapplication.controlador.utileria;
 import com.vmstudio.myapplication.controlador.webservices;
-import com.vmstudio.myapplication.menu_principal;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -72,11 +67,22 @@ public class MainActivity extends AppCompatActivity {
        // if(validaUsuario()==true && ValidaContrasena()==true){
           // consulta();
        // }
+
+        getToken();
       //TODO 13/11/2013 CREAR CONSULTA PARA REALIZAR LA VALIDACION CORRECTA
         Intent i=new Intent(MainActivity.this, menu_principal.class);
         startActivity(i);
 
 
+    }
+    private void  getToken(){
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task -> {
+            if(task.isSuccessful()){
+                String token = task.getResult();
+                //FirebaseUtil.currentUserDetails().update("fcmToken",token);
+                Log.i("Token: ",token);
+            }
+        });
     }
 
     private void consulta() {

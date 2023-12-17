@@ -1,13 +1,11 @@
-package com.vmstudio.myapplication;
+package com.vmstudio.myapplication.vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,13 +16,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.vmstudio.myapplication.controlador.requisicionesAdapter;
+import com.vmstudio.myapplication.R;
 import com.vmstudio.myapplication.controlador.requisicionesDetalleAdapter;
 import com.vmstudio.myapplication.modelo.detalle_requisicion;
-import com.vmstudio.myapplication.modelo.requisiciones;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;

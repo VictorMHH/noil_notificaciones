@@ -44,9 +44,13 @@
     <string name="menu_Requisiciones">Requisiciones</string>
     <string name="menu_ordencom">Ordenes de compra</string>
     <string name="menu_cerrar">Cerrar sesión</string>
+    <string name="menu_entrada">Entrada de Almacen</string>
+    <string name="menu_salida">Salida de Almacen</string>
 
     <!--etiquetas del fragment requisiciones-->
     <string name="fab_buscar_req">Buscar</string>
     <string name="fab_filtrar_req">Filtrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

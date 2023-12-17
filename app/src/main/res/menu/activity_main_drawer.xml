@@ -16,5 +16,13 @@
             android:id="@+id/nav_oc"
             android:icon="@drawable/baseline_oc_24"
             android:title="@string/menu_ordencom" />
+        <item
+            android:id="@+id/entrada_almacen"
+            android:icon="@drawable/baseline_input_24"
+            android:title="@string/menu_entrada" />
+        <item
+            android:id="@+id/salida_almacen"
+            android:icon="@drawable/baseline_output_24"
+            android:title="@string/menu_salida" />
     </group>
 </menu>
